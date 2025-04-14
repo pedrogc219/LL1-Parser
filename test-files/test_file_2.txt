@@ -1,0 +1,8 @@
+7
+(\wedge 1b (\vee 2c false))
+(\rightarrow true (\leftrightarrow (\neg d3 ) 4e))
+(\vee (\wedge 5f 6g) (\rightarrow (\neg 7h) 8i))
+(\leftrightarrow (\neg 9j) (\wge 10k 11l))
+(\neg (\rightarrow 12m 13n))
+(\wedge (\vee 14o true) (\leftrightarrow 15p 16q))
+(\rightarrow (\neg (\wedge 17r 18s)) (\vee 19t 20u))

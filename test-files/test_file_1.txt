@@ -1,0 +1,11 @@
+10
+tru
+false
+(\neg true)
+(\neg (\neg false))
+(\neg (\vee 1 0))
+(\rightarrow (\wedge 1a 2b) 1abc)
+(\leftrightarrow (\neg (\ve 123 1b1)) (\wedge 7 3a))
+(\wedge (\vee (\rightarrow 1 0) (\wedge 4x 2z)) (\neg 9f2))
+(\wedge (\neg (\rightarrow (\vee 3a 5a2cy) 219)) (\leftrightarrow (\wedge 727 1l5) (\vee 32p 09o)))
+(\vee (\rightarrow (\neg 0z1) (\leftrightarrow (\wedge 1v4k 2wz) 8jz9)) (\wedge false true))
