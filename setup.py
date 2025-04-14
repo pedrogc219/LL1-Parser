@@ -30,17 +30,17 @@ token_type = {
 
 tabela_producao = {
     "FORMULA" : {
-        "true" : "CONSTANTE",
-        "false" : "CONSTANTE",
-        "prop" : "PROPOSICAO",
+        "true" : ["CONSTANTE"],
+        "false" : ["CONSTANTE"],
+        "prop" : ["PROPOSICAO"],
         "(" : ["ABREPAREN", "FORMULAINDEFINIDA", "FECHAPAREN"]
     },
     "CONSTANTE" : {
-        "true" : "true",
-        "false" : "false",
+        "true" : ["true"],
+        "false" : ["false"],
     },
     "PROPOSICAO" : {
-        "prop" : "prop",
+        "prop" : ["prop"],
     },
     "FORMULAINDEFINIDA" : {
         "\\neg" : ["OPERATORUNARIO", "FORMULA"],
@@ -50,18 +50,18 @@ tabela_producao = {
         "\\leftrightarrow" : ["OPERATORBINARIO", "FORMULA", "FORMULA"],
     },
     "ABREPAREN" : {
-        "(" : "("
+        "(" : ["("]
     },
     "FECHAPAREN" : {
-        ")" : ")"
+        ")" : [")"]
     },
     "OPERATORUNARIO" : {
-        "\\neg" : "\\neg"
+        "\\neg" : ["\\neg"]
     },
     "OPERATORBINARIO" : {
-        "\\wedge" : "\\wedge",
-        "\\vee" : "\\vee",
-        "\\rightarrow" : "\\rightarrow",
-        "\\leftrightarrow" : "\\leftrightarrowe",
+        "\\wedge" : ["\\wedge"],
+        "\\vee" : ["\\vee"],
+        "\\rightarrow" : ["\\rightarrow"],
+        "\\leftrightarrow" : ["\\leftrightarrow"],
     }
 }
