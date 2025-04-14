@@ -1,43 +1,36 @@
-import requests
-from time import sleep
-from io import StringIO
 from AnalisadorLexico import AnalisadorLexico
 from setup import *
 
+from sys import argv
+from time import sleep
 
-data = open("test_file_2.txt")
+def print_expressoes_analisadas(expressoes_analisadas):
+    for expr in expressoes_analisadas:
+        string = ""
+        for token in expr:
+            string += token[0]+" "
+        print(string)
+
+def print_expressoes_analisadas_tokens(expressoes_analisadas):
+    for expr in expressoes_analisadas:
+        for token in expr:
+            print(token)
+        print("--------------------")
+
+data = open(argv[1])
 read_data = data.read()
 data.close()
 
-analisador_lexico = AnalisadorLexico()
-expressoes_analisadas = analisador_lexico.analise_lexicar(read_data)
-
-
-
-# expressions from data
-for expr in read_data.split("\n"):
-    print(expr)
-
-# expressions resulted from lexical analyzer
-for expr in expressoes_analisadas:
+with open(argv[1]) as f:
     string = ""
-    for token in expr:
-        string += token[0]+" "
-    print(string)
+    while char := f.read(1):
+        if char != "\n":
+            string += char
+        else:
+            print(string)
+            string = ""
 
-# tokens from lexical analyzer
-for expr in expressoes_analisadas:
-    for token in expr:
-        print(token)
-    print("--------------------")
+# analisador_lexico = AnalisadorLexico()
+# expressoes_analisadas = analisador_lexico.analise_lexicar(read_data)
 
-
-pilha = ["FORMULA", "$"]
-buffer = []
-
-for expr in expressoes_analisadas:
-    buffer_expr = ["prop" if token[1] == "PROPOSICAO" else token[0] for token in expr]
-    buffer.append(buffer_expr)
-
-for x in buffer:
-    print(x)
+# python main.py .\test-files\test-1.txt

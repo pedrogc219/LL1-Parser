@@ -1,3 +1,5 @@
+from setup import SM, simbolos, token_type
+
 class AnalisadorLexico:
     def __init__ (self):
         self.reset()
@@ -88,6 +90,8 @@ class AnalisadorLexico:
             self.STATE = SM.FECHAPAREN
         elif (self.char == "\n") or (self.char == "$"):
             self.STATE = SM.FIMEXPR
+
+
 
     def analise_lexicar(self, data):
         self.reset()
