@@ -118,7 +118,7 @@ class AnalisadorLexico:
 
                 elif self.STATE == SM.SIMBOLOILEGAL:
                     if (self.char == "\n") or (self.char == ""):
-                        self.expr_list.append([("invalid", token_type[self.STATE])])
+                        self.expr_list.append([("invalido", token_type[self.STATE])])
                         self.expr = []
                         self.STATE = SM.IDENTIFICAR
                     self.char = self.f.read(1)

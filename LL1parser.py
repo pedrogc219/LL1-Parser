@@ -19,7 +19,7 @@ class LL1parser:
         self.pilha = ["FORMULA", "$"]
         self.fill_buffer(expr)
 
-        while self.buffer[0] != "$":
+        while (self.buffer[0] != "$") or (self.pilha[0] != "$"):
             topo_pilha = self.pilha[0]
             topo_buffer = self.buffer[0]
             if topo_pilha == topo_buffer:

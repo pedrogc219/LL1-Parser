@@ -1,0 +1,6 @@
+5
+(\ve (\neg 4z) 5)
+(\rightarrow (\wedge 6x 7y) (\neg 8))
+(\leftrightarrow (\neg (\vee 9a 0abc)) (\wedge 1x 2)
+(\neg (\rightarrow 6z (\vee 7a 8)))
+(\leftarrow (\wedge (\neg 9k) 0m) (\vee 1n 2o))

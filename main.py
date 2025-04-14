@@ -25,6 +25,8 @@ analisador_lexico = AnalisadorLexico()
 expressoes_analisadas = analisador_lexico.analise_lexica(argv[1])
 
 print_expressoes_analisadas(expressoes_analisadas)
+print("---------------")
+
 
 LL1_parser = LL1parser()
 for expressao in expressoes_analisadas:

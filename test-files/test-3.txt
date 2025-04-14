@@ -1,2 +1,11 @@
-1
-(\neg 1b (\vee 2c false))
+10
+(\vee 4e false)
+(\rightarrow (\neg 5f) 6g)
+(\leftrightarrow (\wedge 7h 8i) (\vee 9j true))
+(\neg (\rightarrow 10k 11l))
+(\wedge 12m (\leftrightarrow 13n 14o))
+(\vee (\neg 15p) (\wedge 16q 17r))
+(\rightarrow (\vee 18s 19t) (\neg 20u))
+(\leftrightarrow true (\wedge 21v (\neg 22w)))
+(\wedge (\rightarrow 23x 24y) (\vee 25z 26aa))
+(\neg (\leftrightarrow (\neg 27ab) 28ac))
