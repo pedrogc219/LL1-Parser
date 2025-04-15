@@ -1,3 +1,6 @@
+# Pedro Gonçalves Classen
+# Gustavo Barbosa
+
 from AnalisadorLexico import AnalisadorLexico
 from LL1parser import LL1parser
 from setup import *
@@ -24,8 +27,8 @@ def print_expressoes_analisadas_tokens(expressoes_analisadas):
 analisador_lexico = AnalisadorLexico()
 expressoes_analisadas = analisador_lexico.analise_lexica(argv[1])
 
-print_expressoes_analisadas(expressoes_analisadas)
-print("---------------")
+# print_expressoes_analisadas(expressoes_analisadas)
+# print("---------------")
 
 
 LL1_parser = LL1parser()
